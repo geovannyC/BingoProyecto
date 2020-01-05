@@ -40,8 +40,8 @@ mi_funcion_principal = () => {
     
 }
 mi_funcion_principal()
-const combined1 = [].concat(b, i,n,g,o);
-console.log(combined1)
+const tabla1 = [].concat(b, i,n,g,o);
+console.log(tabla1)
 iniciar = () =>{GenerarNumeros()}
 GenerarNumeros =()=> { 
     for (let i = 0; i < 25; i++) {
@@ -53,11 +53,11 @@ GenerarNumeros =()=> {
 
 function generarCasilla(num25) {
     let casillaNum = "sq" + num25;
-    let numero = (combined1[num25])
+    let numero = (tabla1[num25])
     document.getElementById(casillaNum).value = numero;
 }
 function lanzar() {
-    if(numerosUsados>75){
+    if(numerosUsados.length<75){
         let misbolas = Math.floor(Math.random() * 75) + 1;
         if (numerosUsados.includes(misbolas))
             lanzar();
