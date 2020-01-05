@@ -4,7 +4,7 @@ const n=new Array();
 const g=new Array();
 const o=new Array();
 const numerosUsados = new Array();
-const tabla1 = [].concat(b, i,n,g,o);
+
 let total=0;
 iniciar = () =>{GenerarNumeros()};
 mi_funcion_principal = () => {
@@ -42,6 +42,7 @@ mi_funcion_principal = () => {
     
 }
 mi_funcion_principal()
+const tabla1 = [].concat(b, i,n,g,o);
 GenerarNumeros =()=> { 
     for (let i = 0; i < 25; i++) {
         if (i == 12)
